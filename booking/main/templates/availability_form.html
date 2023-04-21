@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reserver une chambre</title>
+</head>
+<body>
+      <form action="" method="POST">
+        {{form.as_p}}
+        {% csrf_token %}
+        <button href="/reserver/" type="submit">Book a room</button>
+        
+
+      </form>
+
+     
+     
+</body>
+</html>

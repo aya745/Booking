@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liste des reservations</title>
+</head>
+<body>
+     <p>Liste des reservations</p>
+     {% if request.session.name=='aya' %}
+     {%for res in reservation_list%}
+     <h2>{{res}}</h2>
+     {% endfor %}
+     {% endif %}
+</body>
+</html>
